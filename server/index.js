@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://maitisattwik:0DT1jguua3kdaVuA@cluster0.odr2qtn.mongodb.net/?retryWrites=true&w=majority", {
+  .connect("https://sockets-3rtj.onrender.com", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -30,7 +30,7 @@ const server = app.listen(process.env.PORT, () =>
 );
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://socket-io-chat-sattwikmaiti.vercel.app",
     credentials: true,
   },
 });
