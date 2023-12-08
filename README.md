@@ -1,54 +1,10 @@
-# Snappy - Chat Application 
-Snappy is chat application build with the power of MERN Stack. You can find the tutorial [here](https://www.youtube.com/watch?v=otaQKODEUFs)
+Socket-io Chat Application
+# ##Chat Screen
+![image](https://github.com/Sattwikmaiti/socket-io-chat/assets/90182231/c8acc19e-8b7e-409d-842d-2b14ddbda12e)
 
-
-![login page](./images/snappy_login.png)
-
-![home page](./images/snappy.png)
-
-## Installation Guide
-
-### Requirements
-- [Nodejs](https://nodejs.org/en/download)
-- [Mongodb](https://www.mongodb.com/docs/manual/administration/install-community/)
-
-Both should be installed and make sure mongodb is running.
-
-```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
-```
-Now rename env files from .env.example to .env
-```shell
-cd public
-mv .env.example .env
-cd ..
-cd server
-mv .env.example .env
-cd ..
-```
-
-Now install the dependencies
-```shell
-cd server
-yarn
-cd ..
-cd public
-yarn
-```
-We are almost done, Now just start the development server.
-
-For Frontend.
-```shell
-cd public
-yarn start
-```
-For Backend.
-
-Open another terminal in folder, Also make sure mongodb is running in background.
-```shell
-cd server
-yarn start
-```
-
-Done! Now open localhost:3000 in your browser.
+# ##Registration Screen
+![image](https://github.com/Sattwikmaiti/socket-io-chat/assets/90182231/8b431dc8-37e5-4bdd-8148-54c35e55d734)
+# ##Loading Screen
+![image](https://github.com/Sattwikmaiti/socket-io-chat/assets/90182231/bb056774-9c87-4dd7-bdeb-f26829fa94dc)
+# ##Avatar Selection page
+![image](https://github.com/Sattwikmaiti/socket-io-chat/assets/90182231/f380501b-4b6e-4fb8-ab79-797dea3ddcf1)
