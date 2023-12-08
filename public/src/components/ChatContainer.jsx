@@ -118,6 +118,8 @@ const Container = styled.div`
   .chat-header {
     display: flex;
     justify-content: space-between;
+    background-color:black;
+
     align-items: center;
     padding: 0 2rem;
     .user-details {
@@ -157,6 +159,7 @@ const Container = styled.div`
         max-width: 40%;
         overflow-wrap: break-word;
         padding: 1rem;
+        
         font-size: 1.1rem;
         border-radius: 1rem;
         color: #d1d1d1;
@@ -168,13 +171,15 @@ const Container = styled.div`
     .sended {
       justify-content: flex-end;
       .content {
-        background-color: #4f04ff21;
+        background-color: black;
+        border-radius:30px 0px 30px 30px;
       }
     }
     .recieved {
       justify-content: flex-start;
       .content {
-        background-color: #9900ff20;
+        background-color: black;
+        border-radius:0px 30px 30px 30px;
       }
     }
   }

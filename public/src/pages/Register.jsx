@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { useNavigate, Link } from "react-router-dom";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/images.jpeg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { registerRoute } from "../utils/APIRoutes";
@@ -25,7 +25,7 @@ export default function Register() {
 
   useEffect(() => {
     if (localStorage.getItem("chat-up-auth-token")) {
-      navigate("/login");
+      //navigate("/login");
     }
   }, []);
 
@@ -89,8 +89,8 @@ export default function Register() {
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
-            <img src={Logo} alt="logo" />
-            <h1>snappy</h1>
+            
+            <h1>chat.io</h1>
           </div>
           <input
             type="text"
@@ -135,7 +135,7 @@ const FormContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   align-items: center;
-  background-color: #131324;
+  
   .brand {
     display: flex;
     align-items: center;
@@ -154,12 +154,12 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #00000076;
+    background-color: lightblue;
     border-radius: 2rem;
     padding: 3rem 5rem;
   }
   input {
-    background-color: transparent;
+    background-color: black;
     padding: 1rem;
     border: 0.1rem solid #4e0eff;
     border-radius: 0.4rem;

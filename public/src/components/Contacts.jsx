@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/images.jpeg";
 
 export default function Contacts({ contacts, changeChat }) {
   const [currentUserName, setCurrentUserName] = useState(undefined);
@@ -23,7 +23,7 @@ export default function Contacts({ contacts, changeChat }) {
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h3>snappy</h3>
+            <h3>chat.io</h3>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
@@ -68,7 +68,7 @@ const Container = styled.div`
   display: grid;
   grid-template-rows: 10% 75% 15%;
   overflow: hidden;
-  background-color: #080420;
+  background-image:url("https://img.freepik.com/premium-photo/abstract-concept-different-personalities-generative-ai_974186-2533.jpg");
   .brand {
     display: flex;
     align-items: center;
@@ -78,7 +78,7 @@ const Container = styled.div`
       height: 2rem;
     }
     h3 {
-      color: white;
+      color: black;
       text-transform: uppercase;
     }
   }
@@ -97,7 +97,7 @@ const Container = styled.div`
       }
     }
     .contact {
-      background-color: #ffffff34;
+      background-color: black;
       min-height: 5rem;
       cursor: pointer;
       width: 90%;
@@ -121,6 +121,10 @@ const Container = styled.div`
     .selected {
       background-color: #9a86f3;
     }
+  }
+  .brand{
+    background-color:white;
+    margin-bottom:1rem
   }
 
   .current-user {

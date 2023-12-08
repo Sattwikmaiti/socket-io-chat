@@ -16,6 +16,8 @@ body {
   max-height: 100vh;
   max-width: 100vw;
   overflow: hidden;
+  background-image: url('https://w0.peakpx.com/wallpaper/920/587/HD-wallpaper-whatsapp-app-fondo-sms-verde-wall-whatsapp.jpg');
+  background-size: contain;
 }
 
 .Toastify__toast-theme--dark {
