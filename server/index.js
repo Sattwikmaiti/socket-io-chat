@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("https://sockets-3rtj.onrender.com", {
+  .connect("mongodb+srv://maitisattwik:0DT1jguua3kdaVuA@cluster0.odr2qtn.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
